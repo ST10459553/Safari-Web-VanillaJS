@@ -1,0 +1,112 @@
+.venues-image-header{
+    
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        height: 40%;
+    
+}
+.venues-image-header-img{
+    
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        height: 40%;
+        filter: brightness(50%);
+    
+}
+
+.venues-image-text{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        font-size: 5rem;
+        width: 100%;
+}
+.venue-grid-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        /* grid-template-rows: repeat(3,1fr); */
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid blue; */
+        gap: 10px;
+        margin: 15px;
+        
+
+
+}
+.venue-grid{
+       
+        /* border: 1px solid lightcoral; */
+        /* height: 250px; */
+        box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 4px;
+        border-radius: 5px;
+        transform: scale(0.9);
+        
+
+        
+}
+.venue-grid img{
+  width: 100%;  
+  transform: scale(0.9);
+  border-radius: 5px;
+
+}
+
+.grid-venue-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        justify-content: space-around;
+        text-align: center;
+        font-size:1.3rem;
+}
+
+.book-btn-container{
+        display: flex;
+        justify-content: space-around;
+
+        
+}
+.book-btn{
+    background-color: #EB6117;
+    color: white;
+    font-size: 1.4rem;
+    padding: 12px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+
+.icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0.5rem;
+        
+}
+
+.icons img{
+        width: 45px;
+}
+
+.money-icon{
+        margin-bottom: 10px;
+}
+
+.capacity{
+        margin-right: 10px;
+}
+.price{
+        font-weight: bold;
+
+}
+

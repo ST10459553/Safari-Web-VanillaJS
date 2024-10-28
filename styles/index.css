@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'promixa' ;
+}
+@font-face {
+    font-family: "promixa";
+    src: url(../assets/fonts/Proxima\ Nova\ Alt\ Condensed\ Regular.otf);
+}
+
+body{
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: 0.5rem;
+    padding-right: 0.5rem; */
+}
+.nav-container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    background-color: white;
+
+}
+.navigation,.nav-links{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 6rem;
+    font-size: 1.6rem;
+   
+    
+}
+.navigation{
+    display: grid;
+    grid-template-columns: 250px 60%;
+ 
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 2rem;
+  
+}
+.nav-links a{
+    transition: all 300ms ease;
+}
+.nav-links a:hover{
+
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: .5rem;
+    text-decoration-color: #3DABFF;
+    padding-right:1rem;
+    transform: scale(30px);
+}
+.nav-links a:active{
+ color: #EB6117;
+}
+
+#cart{
+    position: relative;
+    left: 9rem;
+    height: 25px;
+    
+}
+
+a{
+    text-decoration: none;
+    accent-color: #3DABFF;
+    color: black;
+}
+
+.book-now-container{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+.book-now-img{
+    display: inline-block;
+    width: 100%;
+  height: 40rem;
+  filter: brightness(60%);
+  object-fit: cover;
+  
+}
+.book-now-btn{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #EB6117;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.intro-text{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:3rem;
+    width: 100%;
+    color: white;
+
+    text-align: center;
+}
+.mobile-nav{
+    display: none;
+}
+
+@media (max-width: 640px) {     .navigation{
+    display: none;
+}
+
+    body{
+        max-width: 475px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .mobile-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .intro-text{
+        font-size: 2.2rem;
+        padding: 30px;
+    }
+    .mobile-nav h1{
+        font-size: 2.5rem;
+    }
+    .menu{
+        height: 70px;
+    }
+    .mobile-nav-links{
+        display: none;
+    }
+ }
+ 

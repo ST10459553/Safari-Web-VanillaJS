@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'promixa' ;
+}
+@font-face {
+    font-family: "promixa";
+    src: url(../assets/fonts/Proxima\ Nova\ Alt\ Condensed\ Regular.otf);
+}
+.title{
+    font-size: 1.5rem;
+    text-align: center;
+    /* border-bottom: 1px solid black; */
+    padding: 0.8rem;
+    background-color: #EB6117;
+}
+.info-container{
+    display: grid;
+    grid-template-columns:40% 60% ;
+    margin: 20px;
+}
+.location-box{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: left;
+    padding: 15px;
+    margin: 5px;
+    gap: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.location-box img{
+    width: 100%;
+}
+
+.details-box{
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+text-align: center;
+}
+.label-text{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content:  center;
+    align-items: center;
+    gap: 30px;
+    
+}
+.label-text input{
+    padding: 5px;
+    transition: all ease-in 300ms;
+}
+.label-text input:focus{
+    
+   outline: none;
+   
+   border: #EB6117 solid 1px;
+}
+.label-text label{
+    font-size: 1.3rem;
+    text-align: right;
+
+}
+
+.form{
+display: flex;
+flex-direction: column;
+justify-content: center;
+/* align-items: center; */
+flex-wrap: wrap;
+gap: 20px;
+padding: 20px;
+
+}
+.card-info{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    /* align-self: center; */
+}
+
+
+.book-btn{
+text-align: center;
+
+}
+#pay{
+    background-color: #EB6117;
+    border: none;
+    padding: 10px 60px;
+}
