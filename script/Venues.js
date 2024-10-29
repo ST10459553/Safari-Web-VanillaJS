@@ -17,7 +17,7 @@ VenuesData.forEach((venue, index) => {
           <div class="grid-venue-info">
             <span class="name">${venue.name}</span>
             <span class="capacity">${venue.capacity}</span>
-            <span class="price">${venue.price}</span>
+            <span class="price">R${venue.price}</span>
           </div>
           <div class="icons">
             <img src="../assets/images/location.jpg" alt="Location">

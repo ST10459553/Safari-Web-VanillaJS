@@ -34,24 +34,24 @@
     <!-- <button>Check Venues</button> -->
   </div>
   <div class="wrapper">
-  <form class="form-container">
+  <form class="form-container" name="contactForm" action="mailto:joelktg9@gmail.com" enctype="multipart/form-data" method="post">
     <div class="form-items">
-      <label for="name">Name</label><input type="text" id="name" required minlength="4" maxlength="15"/>
+      <label for="name">Name</label><input type="text" name="name" id="name"  minlength="4" maxlength="15"/>
     </div>
     <div class="form-items">
-      <label for="surname">Surname</label><input type="text" id="surname" required minlength="4" maxlength="15"/>
+      <label for="surname">Surname</label><input type="text" name="surname" id="surname"  minlength="4" maxlength="15"/>
     </div>
     <div class="form-items">
-      <label for="email">Email</label><input type="email" id="email" required />
+      <label for="email">Email</label><input type="email" name="email" id="email" required />
     </div>
     <div class="form-items">
-      <label for="phone">Phone Number</label><input type="tel" id="phone" required minlength="10" maxlength="15"/>
+      <label for="phone">Phone Number</label><input type="tel" name="phone" id="phone"  minlength="10" maxlength="15"/>
     </div>
     <div class="form-items">
       <label for="message">Message</label>
-      <textarea id="message"></textarea>
+      <textarea name="message" id="message"></textarea>
     </div>
-    <input class="submit-btn"  type="submit" value="Submit" />
+    <input class="submit-btn" type="submit" value="Submit" />
   </div>
 </form>
 </main>
@@ -72,5 +72,6 @@
     <img src="../assets/images/socials/gmail.png" alt="" srcset="">
   </div>
 </footer>
+<script src="../script/Form.js"></script>
   </body>
 </html>

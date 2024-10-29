@@ -48,7 +48,7 @@
             <img class="book-now-img" src="../assets/images/keenan-barber-9jzSTa4pJes-unsplash.jpg" alt="venue" srcset="" width="100%"> 
             
             <h1 class="intro-text">Experience fine dining and elegant events in a serene setting. Perfect for any occasion. Book now!</h1>
-            <button class="book-now-btn">Book Now</button>
+            <button onclick="bookNowLink()" class="book-now-btn">Book Now</button>
         </div>
         
        
@@ -71,4 +71,10 @@
         </div>
       </footer>
   </body>
+  <script>
+    const bookNowLink = () => {
+      window.location.href = '../pages/Venues.html';
+      alert('Redirecting to booking page');
+    }
+  </script>
 </html>
